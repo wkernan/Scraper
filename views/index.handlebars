@@ -1,0 +1,49 @@
+<header class="nav-heading">
+	<div class="container center-align">
+		<h1 class="heading">PCGamer Build of the Week</h1>
+	</div>
+</header>
+<main>
+	<div class="container">
+		<div class="row">
+			<div class="col l6" id="builds">
+			{{#each article}}
+				<span id="{{@index}}" data-id="{{this._id}}" class="hide center-align">
+					<a href="{{this.link}}"><h4>{{this.title}}</h4></a>
+					<img class="materialboxed" src="{{this.image}}">
+				</span>
+		  {{/each}}
+		  <ul class="pagination center-align">
+		  	<li><a id="left" href="#"><i class="material-icons">chevron_left</i></a></li>
+		  	<li><a id="right" href="#"><i class="material-icons">chevron_right</i></a></li>
+		  </ul>
+		    <form>
+		      <div class="row">
+		        <div class="input-field col l12">
+		          <i class="material-icons prefix">mode_edit</i>
+		          <textarea id="body" class="materialize-textarea"></textarea>
+		          <label>Comment on this Build</label>
+    	        <button class="btn waves-effect waves-light" id="postComment">Submit
+    						<i class="material-icons right">send</i>
+  						</button>
+		        </div>
+		      </div>
+	      </form>
+			</div>
+			<div class="col l5 offset-l1">
+	      <div class="row">
+	      	<div class="col l12">
+	      		<div class="comment-box z-depth-1">
+	      		<h4 class="center-align separator-heading">Comments</h4>
+	      			<div class="comments">
+	      			</div>
+	      		</div>
+	      	</div>
+	      </div>
+	    </div>
+		</div>
+	</div>
+</main>
+<footer>
+</footer>
+
