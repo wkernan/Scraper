@@ -118,7 +118,6 @@ button i {
 
 .delComment:hover {
 	background-color: #D60F15;
-	opacity: .75;
 	color: white;
 	cursor: pointer;
 }
